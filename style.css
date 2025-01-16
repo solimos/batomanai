@@ -1,0 +1,86 @@
+/*
+  feel free to change $rand
+  it changes the amplitude 
+*/
+@-webkit-keyframes batman {
+  0% {
+    transform: translate(-4267%, -2838%);
+    opacity: 0;
+  }
+  30%, 60% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-2846%, -1496%);
+    opacity: 0;
+  }
+}
+@-moz-keyframes batman {
+  0% {
+    transform: translate(2781%, 3098%);
+    opacity: 0;
+  }
+  30%, 60% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(1353%, 2954%);
+    opacity: 0;
+  }
+}
+@-o-keyframes batman {
+  0% {
+    transform: translate(4224%, 857%);
+    opacity: 0;
+  }
+  30%, 60% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(4107%, 194%);
+    opacity: 0;
+  }
+}
+@keyframes batman {
+  0% {
+    transform: translate(-4865%, -2781%);
+    opacity: 0;
+  }
+  30%, 60% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-735%, -1269%);
+    opacity: 0;
+  }
+}
+body {
+  margin: 0;
+  overflow: hidden;
+}
+body svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  background: -webkit-radial-gradient(#01579B, #000);
+  background: -o-radial-gradient(#01579B, #000);
+  background: -moz-radial-gradient(#01579B, #000);
+  background: radial-gradient(#01579B, #000);
+}
+body svg g {
+  -webkit-filter: url(#edge-cleaner);
+  filter: url(#edge-cleaner);
+}
+body svg polygon {
+  opacity: 0;
+  transform-box: fill-box;
+  -webkit-animation: batman 6s infinite;
+  -moz-animation: batman 6s infinite;
+  -o-animation: batman 6s infinite;
+  animation: batman 6s infinite;
+}
